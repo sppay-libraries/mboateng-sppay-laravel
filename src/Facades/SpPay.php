@@ -1,7 +1,6 @@
 <?php
 
-
-namespace Mboateng\SpPayLaravel;
+namespace Mboateng\SpPayLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

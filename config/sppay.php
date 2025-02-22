@@ -7,5 +7,5 @@ return [
     'client_secret' => env('SPPAY_CLIENT_SECRET'),
     'username' => env('SPPAY_USERNAME'),
     'password' => env('SPPAY_PASSWORD'),
-    'webhook_route' => '/sp-pay/webhook',
+    'cache_token_key' => 'sp_pay_access_token',
 ];
