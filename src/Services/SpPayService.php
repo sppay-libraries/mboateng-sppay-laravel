@@ -3,8 +3,10 @@
 namespace Mboateng\SpPayLaravel\Services;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Cache;
 use GuzzleHttp\Exception\RequestException;
+use Mboateng\SpPayLaravel\Exceptions\InvalidAccountException;
 use Mboateng\SpPayLaravel\Exceptions\SpPayException;
 
 class SpPayService
@@ -65,6 +67,10 @@ class SpPayService
         }
     }
 
+    /**
+     * @throws GuzzleException
+     * @throws InvalidAccountException
+     */
     public function validatePayment(array $payload)
     {
         try {
@@ -74,7 +80,7 @@ class SpPayService
             ]);
             return json_decode($response->getBody(), true);
         } catch (RequestException $e) {
-            throw new SpPayException('Payment validation failed', $e->getCode(), $e);
+            throw new InvalidAccountException('Payment validation failed', $e->getCode(), $e);
         }
     }
 
