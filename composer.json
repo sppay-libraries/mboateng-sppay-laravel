@@ -1,0 +1,16 @@
+{
+    "name": "mboateng/sp-pay-laravel",
+    "description": "SP Pay laravel package by mboateng",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Mboateng\\SpPayLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "michael boateng"
+        }
+    ],
+    "require": {}
+}
