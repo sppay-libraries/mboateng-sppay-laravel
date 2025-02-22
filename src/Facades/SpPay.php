@@ -1,6 +1,7 @@
 <?php
 
-namespace Mboateng\SpPayLaravel\Facades;
+
+namespace Mboateng\SpPay\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,6 +9,6 @@ class SpPay extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'sppay';
+        return 'sp-pay';
     }
 }
