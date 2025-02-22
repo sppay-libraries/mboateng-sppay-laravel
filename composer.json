@@ -1,6 +1,5 @@
 {
     "name": "mboateng/sp-pay-laravel",
-    "description": "SP Pay laravel package by mboateng",
     "type": "package",
     "license": "MIT",
     "autoload": {
@@ -10,25 +9,9 @@
     },
     "authors": [
         {
-            "name": "Michael Boateng",
-            "email": "michael@mboateng.com"
+            "name": "michael"
         }
     ],
-    "require": {
-        "php": "^7.3|^8.0",
-        "guzzlehttp/guzzle": "^7.0",
-        "illuminate/support": "^8.0|^9.0|^10.0"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Mboateng\\SpPayLaravel\\SpPayServiceProvider"
-            ],
-            "aliases": {
-                "SpPay": "Mboateng\\SpPayLaravel\\Facades\\SpPay"
-            }
-        }
-    },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "require": {}
 }
