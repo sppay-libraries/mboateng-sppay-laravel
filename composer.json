@@ -1,18 +1,34 @@
 {
     "name": "mboateng/sp-pay-laravel",
-    "type": "package",
+    "description": "Laravel package for SP Pay API integration",
+    "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
     "autoload": {
         "psr-4": {
             "Mboateng\\SpPayLaravel\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "michael"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mboateng\\SpPayLaravel\\SpPayServiceProvider"
+            ],
+            "aliases": {
+                "SpPay": "Mboateng\\SpPayLaravel\\Facades\\SpPay"
+            }
         }
-    ],
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true
 }
