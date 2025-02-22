@@ -2,6 +2,7 @@
     "name": "mboateng/sp-pay-laravel",
     "type": "package",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Mboateng\\SpPayLaravel\\": "src/"
