@@ -8,6 +8,6 @@ class SpPay extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'sp-pay';
+        return 'sppay';
     }
 }

@@ -8,7 +8,7 @@ class SpPayServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->singleton('sp-pay', function ($app) {
+        $this->app->singleton('sppay', function ($app) {
             return new Services\SpPayService(config('sppay'));
         });
     }
